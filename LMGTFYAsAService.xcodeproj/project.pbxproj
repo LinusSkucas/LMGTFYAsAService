@@ -9,16 +9,22 @@
 /* Begin PBXBuildFile section */
 		15C61E0F259E62590053F17F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C61E0E259E62590053F17F /* AppDelegate.swift */; };
 		15C61E11259E625D0053F17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C61E10259E625D0053F17F /* Assets.xcassets */; };
-		15C61E14259E625D0053F17F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C61E12259E625D0053F17F /* MainMenu.xib */; };
+		15C61E1E259E62780053F17F /* LMGTFYCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C61E1D259E62780053F17F /* LMGTFYCore.swift */; };
+		15C61E21259E62890053F17F /* String+Slug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C61E20259E62890053F17F /* String+Slug.swift */; };
+		15C61E25259E63450053F17F /* LMGTFYService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C61E24259E63450053F17F /* LMGTFYService.swift */; };
+		15C61E2D259E83590053F17F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C61E2C259E83590053F17F /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15C61E0B259E62590053F17F /* LMGTFYAsAService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMGTFYAsAService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C61E0E259E62590053F17F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C61E10259E625D0053F17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		15C61E13259E625D0053F17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		15C61E15259E625D0053F17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C61E16259E625D0053F17F /* LMGTFYAsAService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LMGTFYAsAService.entitlements; sourceTree = "<group>"; };
+		15C61E1D259E62780053F17F /* LMGTFYCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMGTFYCore.swift; sourceTree = SOURCE_ROOT; };
+		15C61E20259E62890053F17F /* String+Slug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Slug.swift"; sourceTree = "<group>"; };
+		15C61E24259E63450053F17F /* LMGTFYService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMGTFYService.swift; sourceTree = "<group>"; };
+		15C61E2C259E83590053F17F /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				15C61E0E259E62590053F17F /* AppDelegate.swift */,
+				15C61E1D259E62780053F17F /* LMGTFYCore.swift */,
+				15C61E24259E63450053F17F /* LMGTFYService.swift */,
+				15C61E20259E62890053F17F /* String+Slug.swift */,
 				15C61E10259E625D0053F17F /* Assets.xcassets */,
-				15C61E12259E625D0053F17F /* MainMenu.xib */,
 				15C61E15259E625D0053F17F /* Info.plist */,
+				15C61E2C259E83590053F17F /* MainMenu.xib */,
 				15C61E16259E625D0053F17F /* LMGTFYAsAService.entitlements */,
 			);
 			path = LMGTFYAsAService;
@@ -118,7 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C61E11259E625D0053F17F /* Assets.xcassets in Resources */,
-				15C61E14259E625D0053F17F /* MainMenu.xib in Resources */,
+				15C61E2D259E83590053F17F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,22 +138,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C61E1E259E62780053F17F /* LMGTFYCore.swift in Sources */,
 				15C61E0F259E62590053F17F /* AppDelegate.swift in Sources */,
+				15C61E25259E63450053F17F /* LMGTFYService.swift in Sources */,
+				15C61E21259E62890053F17F /* String+Slug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		15C61E12259E625D0053F17F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15C61E13259E625D0053F17F /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15C61E17259E625D0053F17F /* Debug */ = {
@@ -270,13 +271,14 @@
 				CODE_SIGN_ENTITLEMENTS = LMGTFYAsAService/LMGTFYAsAService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 39UWSCXL32;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = LMGTFYAsAService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.LMGTFYAsAService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -291,13 +293,14 @@
 				CODE_SIGN_ENTITLEMENTS = LMGTFYAsAService/LMGTFYAsAService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 39UWSCXL32;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = LMGTFYAsAService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.LMGTFYAsAService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
