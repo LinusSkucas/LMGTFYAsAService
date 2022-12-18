@@ -9,7 +9,6 @@ import Foundation
 
 func returnLMGTFYURLForTerms(_ terms: String) -> String? {
     guard let terms = terms.convertedToSlug() else { return nil }
-    let writable = UserDefaults.standard.string(forKey: "LMGTFYURL")
-    let url = "https://googlethatforyou.com?q=\(terms)"
-    return url
+    let host = UserDefaults.standard.string(forKey: "LMGTFYURL") ?? "https://googlethatforyou.com?q="
+    return host + terms
 }
